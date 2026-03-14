@@ -1,4 +1,5 @@
-const API_URL = import.meta.env.VITE_API_URL || (import.meta.env.DEV ? '/api' : 'http://localhost:3000/api');
+// Use /api so Ingress routes to backend. VITE_API_URL overrides for custom setups.
+const API_URL = import.meta.env.VITE_API_URL || '/api';
 
 const api = {
   async request(method, path, body, headers = {}) {
