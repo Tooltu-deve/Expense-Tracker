@@ -1,0 +1,9 @@
+node_modules
+.env
+.env.*
+*.log
+.git
+.gitignore
+__tests__
+*.test.js
+vitest.config.js
